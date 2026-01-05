@@ -1,0 +1,36 @@
+<!-- 1 This tells the browser that the document is an HTML5 web page. -->
+<!DOCTYPE html>
+<!-- 4 This tell the browser that the contents of the page is English-->
+<html lang="en">
+
+<head>
+<!-- 8 This tells the browser what character encoding to use. ei emojis become available as well as letters with accents etc-->   
+    <meta charset="TF-8">
+<!-- 10 This sets the viewport to the size of the screen, important because there are many diferent screen sizes in todays technoloogy filled world, computers, phones, tablets etc-->
+    <meta name="viewport" constent="width-device-width, initial-scale=1.0">
+<!-- 12 This shows up in the browser tab--> 
+    <title>Boulder Net Spears</title>
+<!-- 14 Links to the css and pulls all of the style rules over-->  
+    <link rel="stylesheet" href="rps.css">
+</head>
+<!-- 17 The visible part of the web page -->
+<body>
+    <h1>Boulder Net Spears</h1>
+<!-- 20-24 This creates a container for my choice buttons-->
+    <div class="choices">
+<!-- 22-24 This turns the html rock paper scissors into clickable buttons-->
+        <button class ="rock-carved" id="rock">Boulder</button>
+        <button class ="rock-carved" id="paper">Net</button>
+        <button class ="rock-carved" id="scissors">Spears</button>
+    </div>
+<!-- 27-32 This creates a container for the choices of the player and computer as well as the results-->
+    <div class="results">
+<!-- 29-31 This displays the plays choice and the coputers choice as well as the result-->       
+        <p id="player-choice">Your Choice:</p>
+        <p id="computer-choice">Computer chioce:</p>
+        <p id="winner">Winner:</p>
+    </div>
+<!-- 34 This, similarly to link rel, refrences the rps javaScript and adds all of the rules to the html-->
+    <script src="rps.js"></script>
+</body>
+</html>
